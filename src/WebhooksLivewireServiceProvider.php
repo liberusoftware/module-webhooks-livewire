@@ -12,7 +12,6 @@ final class WebhooksLivewireServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'webhooks-livewire');
-        Livewire\Livewire::component('webhooks-livewire-overview', Liberu\Foundation\WebhooksLivewire\Livewire\Overview::class);
+        Livewire::component('webhooks-livewire-overview', Liberu\Foundation\WebhooksLivewire\Livewire\Overview::class);
     }
 }
-
